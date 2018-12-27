@@ -42,6 +42,29 @@ body {
   min-height: 100vh;
 }
 
+.navmenu {
+  position: fixed;
+  text-transform: uppercase;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.navmenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.navmenu ul li {
+  padding: 1rem;
+  margin: 1rem;
+}
+
 .container {
   min-height: 100vh;
   display: -ms-grid;
@@ -51,6 +74,12 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-gap: 0;
-      grid-template-areas: "head" "skill" "exp" "edu";
+}
+
+#header .header-image {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/images/header-image.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/header-image.jpg);
+  background-size: cover;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

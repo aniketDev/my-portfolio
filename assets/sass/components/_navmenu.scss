@@ -1,0 +1,16 @@
+.navmenu {
+    position: fixed;
+    text-transform: uppercase;
+    justify-self: end;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+
+        li {
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+}
