@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    //background-image: linear-gradient(to right bottom, var(--color-blue), var(--color-cyan));
+    background: #ffffff;
+    //color: white;
+    min-height: 100vh;
+}
