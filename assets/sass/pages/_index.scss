@@ -19,9 +19,14 @@
             font-size: 5rem;
             letter-spacing: 0.3rem;
             margin-bottom: 1rem;
+            background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
 
             span {
-                color: var(--color-yellow);
+                background: -webkit-linear-gradient(rgba($color-yellow, 1), rgba($color-yellow, 0));
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
             }
         }
 

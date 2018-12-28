@@ -43,6 +43,31 @@ body {
   color: #777;
 }
 
+.home-button {
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+  overflow: hidden;
+  background: var(--color-teal);
+  cursor: pointer;
+  color: #fff;
+}
+
+.home-button:hover {
+  color: #fff;
+  -webkit-box-shadow: -1.5rem 0 3rem rgba(255, 255, 255, 0.5), 1.5rem 0 3rem rgba(255, 255, 255, 0.5);
+          box-shadow: -1.5rem 0 3rem rgba(255, 255, 255, 0.5), 1.5rem 0 3rem rgba(255, 255, 255, 0.5);
+  text-shadow: 0 0 1rem rgba(255, 255, 255, 0.5), 0 0 2rem rgba(255, 255, 255, 0.5), 0 0 3rem rgba(255, 255, 255, 0.5);
+}
+
 .navmenu {
   position: fixed;
   text-transform: uppercase;
@@ -70,12 +95,13 @@ body {
   letter-spacing: 0.3rem;
   font-weight: 500;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
+  transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
 }
 
 .navmenu ul li:hover {
   color: var(--color-amber);
+  border-bottom: 0.3rem solid var(--color-amber);
 }
 
 .container {
@@ -116,10 +142,15 @@ body {
   font-size: 5rem;
   letter-spacing: 0.3rem;
   margin-bottom: 1rem;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #header .header-image h1 span {
-  color: var(--color-yellow);
+  background: -webkit-linear-gradient(#ffeb3b, rgba(255, 235, 59, 0));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #header .header-image p {
