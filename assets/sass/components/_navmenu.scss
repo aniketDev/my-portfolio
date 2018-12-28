@@ -1,7 +1,9 @@
 .navmenu {
     position: fixed;
     text-transform: uppercase;
-    justify-self: end;
+    align-self: flex-end;
+    color: #fff;
+    font-size: 1.6rem;
 
     ul {
         display: flex;
@@ -9,8 +11,18 @@
         list-style: none;
 
         li {
-            padding: 1rem;
-            margin: 1rem;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0.5rem;
+            margin: 1.5rem;
+            letter-spacing: 0.3rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--color-amber);
+            }
         }
+
     }
 }

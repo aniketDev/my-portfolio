@@ -12,10 +12,10 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
     //background-image: linear-gradient(to right bottom, var(--color-blue), var(--color-cyan));
     background: #ffffff;
-    //color: white;
     min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #777;
 }
