@@ -12,6 +12,7 @@
             display: inline-block;
             padding: 0.5rem;
             margin: 1.5rem 0;
+            text-align: center;
 
             a {
                 position: relative;
@@ -25,15 +26,31 @@
                 font-weight: 500;
                 transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
 
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    position: absolute;
+                    height: 0.3rem;
+                    background: var(--color-amber);
+                    transition: width 350ms ease-out;
+                }
+
                 &:hover {
                     background: -webkit-linear-gradient(rgba($color-yellow, 1) 30%, rgba($color-yellow, 0.5) 100%);
                     -webkit-text-fill-color: transparent;
                     -webkit-background-clip: text;
                     //color: var(--color-amber);
-                    border-bottom: 0.3rem solid var(--color-amber);
+                    //border-bottom: 0.3rem solid var(--color-amber);
+
+                    &::before {
+                        width: 100%;
+                    }
                 }
 
             }
+
+
         }
 
     }

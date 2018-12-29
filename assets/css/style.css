@@ -60,6 +60,7 @@ body {
   cursor: pointer;
   color: #fff;
   margin-top: 5rem;
+  outline: none;
 }
 
 .home-button:hover {
@@ -86,6 +87,7 @@ body {
   display: inline-block;
   padding: 0.5rem;
   margin: 1.5rem 0;
+  text-align: center;
 }
 
 .navmenu ul li a {
@@ -102,11 +104,25 @@ body {
   transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
 }
 
+.navmenu ul li a::before {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  height: 0.3rem;
+  background: var(--color-amber);
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
 .navmenu ul li a:hover {
   background: -webkit-linear-gradient(#ffeb3b 30%, rgba(255, 235, 59, 0.5) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  border-bottom: 0.3rem solid var(--color-amber);
+}
+
+.navmenu ul li a:hover::before {
+  width: 100%;
 }
 
 .container {
@@ -122,8 +138,8 @@ body {
 
 #header .header-image {
   height: 100vh;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.9))), url("/assets/images/header-image.jpg");
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url("/assets/images/header-image.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.7))), url("/assets/images/header-image.jpg");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url("/assets/images/header-image.jpg");
   background-size: cover;
   background-position: 75% 10%;
   background-repeat: no-repeat;
