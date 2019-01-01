@@ -1,0 +1,10 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-bg {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

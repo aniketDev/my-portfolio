@@ -31,8 +31,7 @@
 
                 span {
                     background: -webkit-linear-gradient(rgba($color-yellow, 1) 30%, rgba($color-yellow, 0) 100%);
-                    -webkit-text-fill-color: transparent;
-                    -webkit-background-clip: text;
+                    @include text-bg;
                 }
             }
 
@@ -46,16 +45,54 @@
 
 #about {
     height: 100vh;
+
+    .about-heading {
+        text-align: center;
+
+        span {
+            font-size: 4rem;
+            font-weight: 700;
+            display: inline-block;
+            background: linear-gradient(to right, var(--color-blue), var(--color-cyan));
+
+            @include text-bg;
+            transition: all .2s;
+
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: row;
+
+        .about-info {
+            background-color: aqua;
+            flex-grow: 1; // or, flex: 1;
+        }
+
+        .about-images {
+            background-color: green;
+            flex-grow: 1;
+            ;
+        }
+    }
 }
 
 #skills {
     height: 50rem;
+    background-color: brown;
 }
 
 #experience {
     height: 50rem;
+    background-color: tomato;
 }
 
 #education {
     height: 50rem;
+    background-color: steelblue;
 }

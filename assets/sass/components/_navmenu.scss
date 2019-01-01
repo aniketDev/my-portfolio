@@ -26,7 +26,7 @@
                 font-weight: 500;
                 transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
 
-                &::before {
+                &::after {
                     content: "";
                     display: block;
                     width: 0;
@@ -43,7 +43,7 @@
                     //color: var(--color-amber);
                     //border-bottom: 0.3rem solid var(--color-amber);
 
-                    &::before {
+                    &::after {
                         width: 100%;
                     }
                 }
