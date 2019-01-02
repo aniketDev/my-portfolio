@@ -8,18 +8,42 @@
     margin: 2rem;
     border-radius: 1rem;
     text-decoration: none;
-    transition: 1s;
     overflow: hidden;
     background: var(--color-teal);
     cursor: pointer;
     color: #fff;
     margin-top: 5rem;
     outline: none;
+    transition: box-shadow 1s, text-shadow 1s, transform 0.3s;
 
     &:hover {
         color: #fff;
         box-shadow: -1rem 0 2rem rgba(255, 255, 255, .5), 1rem 0 2rem rgba(255, 255, 255, .5);
         text-shadow: 0 0 1rem rgba(255, 255, 255, .5), 0 0 2rem rgba(255, 255, 255, .5), 0 0 3rem rgba(255, 255, 255, .5);
+        @include scale-up
     }
 
+}
+
+.download {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: var(--color-teal);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    border: 2px solid var(--color-teal);
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+    transition: all 0.5s;
+    background: transparent;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, .4);
+        color: #fff;
+        background: var(--color-teal);
+    }
 }

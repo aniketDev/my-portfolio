@@ -1,18 +1,39 @@
 .image-container {
     position: relative;
+    margin: 3rem;
+    height: 90%;
+
+    &>* {
+        width: 40%;
+        height: 40%;
+        box-shadow: 0 1.5rem 4rem $shadow;
+        border-radius: 3px;
+        position: absolute;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 1;
+        }
+    }
 
     .img--1 {
-        width: 20rem;
-        height: 20rem;
+        left: 13%;
+        top: 5%;
     }
 
     .img--2 {
-        width: 20rem;
-        height: 20rem;
+        right: 13%;
+        top: 15%;
     }
 
     .img--3 {
-        width: 20rem;
-        height: 20rem;
+        left: 27%;
+        top: 35%;
     }
+
+    // &:hover &>*:not(:hover) {
+    //     transform: scale(0.9);
+    // }
+
 }

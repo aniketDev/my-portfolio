@@ -1,0 +1,19 @@
+// #about {
+//     display: grid;
+//     grid-template-rows: 1fr 10fr;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-template-areas: "head head"
+//         "image content";
+
+//     .about-heading {
+//         grid-area: head;
+//     }
+
+//     .about-images {
+//         grid-area: image;
+//     }
+
+//     .about-info {
+//         grid-area: content;
+//     }
+// }

@@ -8,3 +8,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin scale-up {
+    transform: scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem $shadow;
+}
