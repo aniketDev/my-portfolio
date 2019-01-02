@@ -1,9 +1,10 @@
 // #about {
 //     display: grid;
-//     grid-template-rows: 1fr 10fr;
+//     grid-template-rows: 10% 90%;
 //     grid-template-columns: repeat(2, 1fr);
 //     grid-template-areas: "head head"
 //         "image content";
+//     align-items: center;
 
 //     .about-heading {
 //         grid-area: head;

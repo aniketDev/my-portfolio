@@ -25,7 +25,7 @@
     <!-- Main Container -->
     <div class="container">
         <!-- Navigation Section -->
-        <nav class="navmenu">
+        <nav class="navmenu" id="nav">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Skills</a></li>
@@ -71,11 +71,7 @@
                         massa, elementum sit amet laoreet eu, molestie sit amet leo. Duis sit amet enim erat. Aliquam
                         egestas nec nisl in elementum. Etiam interdum quis lorem eget gravida. Ut porta volutpat leo, a
                         interdum leo laoreet tincidunt. Integer vulputate metus nisl, et tristique erat gravida eget.
-                        Morbi quis enim eu sem vulputate rutrum. Fusce dictum risus sed facilisis condimentum. Nullam
-                        venenatis tortor non tellus lacinia, ut ornare ligula tincidunt. Etiam eget nibh ut augue
-                        laoreet tempor. Suspendisse ut facilisis eros. Nullam volutpat vulputate ante sit amet feugiat.
-                        Mauris tempus posuere est sed semper. Sed egestas felis lorem, in suscipit augue convallis
-                        dictum.
+                        Morbi quis enim eu.
                     </p>
                     <p class="paragraph">
                         Donec finibus libero eu turpis condimentum, ut tempus neque fringilla. Nulla ac magna ut mauris
@@ -102,6 +98,18 @@
             Education
         </section>
     </div>
+
+    <script>
+        let nav = document.getElementById('nav');
+        window.onscroll = function () {
+            if (window.pageYOffset > 750) {
+                nav.classList.add('nav-bg');
+            } else {
+                nav.classList.remove('nav-bg');
+            }
+        }
+    </script>
 </body>
+
 
 </html>

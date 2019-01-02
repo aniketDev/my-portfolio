@@ -1,3 +1,7 @@
+.container {
+    min-height: 100vh;
+}
+
 #header {
 
     .header-image {
@@ -58,32 +62,30 @@
         background-color: var(--color-blue-grey);
 
         span {
+            font-size: 4rem;
+            font-weight: 700;
+            display: inline-block;
             background: linear-gradient(to bottom, var(--color-amber), var(--color-yellow));
+
             @include text-bg;
             transition: all .2s;
 
             &:hover {
-                @include scale-up;
+                transform: scale(1.1);
+                text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
             }
         }
     }
 
     .about-content {
         height: 90%;
-        display: flex;
-        flex-direction: row;
-        margin-top: 6rem;
-
-        .about-images {
-            flex: 0 0 45%;
-        }
 
         .about-info {
-            flex: 0 0 55%;
-            padding: 1rem;
-            display: flex;
-            flex-direction: column;
-            padding: 4rem 4rem 4rem 0;
+            padding: 0 4rem 0 0;
+        }
+
+        .about-images {
+            height: 90%;
         }
     }
 }

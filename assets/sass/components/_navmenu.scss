@@ -1,12 +1,15 @@
 .navmenu {
     position: fixed;
-    text-transform: uppercase;
-    align-self: flex-end;
-    color: #fff;
-    font-size: 1.6rem;
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
+    width: 100%;
+    z-index: 2;
 
     ul {
         list-style: none;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 1.6rem;
 
         li {
             display: inline-block;
@@ -54,4 +57,8 @@
         }
 
     }
+}
+
+.nav-bg {
+    background-color: var(--color-blue-grey);
 }
