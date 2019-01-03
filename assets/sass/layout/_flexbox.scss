@@ -3,23 +3,24 @@
     flex-direction: column;
 }
 
+.navmenu {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .about-content {
     display: flex;
     flex-direction: row;
     align-items: center;
 
     .about-info {
-        flex: 0 0 50%;
+        flex: 0 0 55%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     .about-images {
-        flex: 0 0 50%;
+        flex: 0 0 45%;
     }
-}
-
-.navmenu {
-    display: flex;
-    justify-content: flex-end;
 }

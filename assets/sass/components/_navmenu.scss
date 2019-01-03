@@ -1,7 +1,7 @@
 .navmenu {
     position: fixed;
-    background-color: transparent;
-    transition: background-color 0.3s ease-out;
+    background-image: transparent;
+    transition: background-image 0.3s ease-in-out;
     width: 100%;
     z-index: 2;
 
@@ -27,7 +27,7 @@
                 padding: 1rem;
                 letter-spacing: 0.3rem;
                 font-weight: 500;
-                transition: color 0.5s ease-in-out, border-bottom 0.18s ease-in-out;
+                transition: color 2.5s ease-in-out, border-bottom 0.18s ease-in-out;
 
                 &::after {
                     content: "";
@@ -60,5 +60,5 @@
 }
 
 .nav-bg {
-    background-color: var(--color-blue-grey);
+    background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
 }

@@ -1,0 +1,65 @@
+#skills {
+    height: 100vh;
+    background-color: #ccc;
+
+    .skill-content {
+        height: 90%;
+        position: relative;
+        background-color: #ddd;
+
+        &>* {
+            align-self: center;
+            width: 20rem;
+            height: 20rem;
+            // //position: relative;
+            // background-size: contain;
+        }
+
+        .skill1 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill2 {
+            background-image: url('/assets/images/logo/css.png');
+            @include skill-bg;
+        }
+
+        .skill3 {
+            background-image: url('/assets/images/logo/js.png');
+            @include skill-bg;
+        }
+
+        .skill4 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill5 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill6 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill7 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill8 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+        .skill9 {
+            background-image: url('/assets/images/logo/html.png');
+            @include skill-bg;
+        }
+
+    }
+
+}
