@@ -4,60 +4,55 @@
 
     .skill-content {
         height: 90%;
-        position: relative;
         background-color: #ddd;
 
         &>* {
             align-self: center;
-            width: 20rem;
-            height: 20rem;
-            // //position: relative;
-            // background-size: contain;
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            //border: 0.5rem solid var(--color-blue-grey);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .skill1 {
-            background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
+            background-image: url('/assets/images/logo/js.png');
+
+            .ldBar {}
         }
 
         .skill2 {
             background-image: url('/assets/images/logo/css.png');
-            @include skill-bg;
         }
 
         .skill3 {
             background-image: url('/assets/images/logo/js.png');
-            @include skill-bg;
         }
 
         .skill4 {
-            background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
+            background-image: url('/assets/images/logo/java.jpg');
         }
 
         .skill5 {
-            background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
+            background-image: url('/assets/images/logo/angular.png');
         }
 
         .skill6 {
             background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
         }
 
         .skill7 {
             background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
         }
 
         .skill8 {
             background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
         }
 
         .skill9 {
             background-image: url('/assets/images/logo/html.png');
-            @include skill-bg;
         }
 
     }

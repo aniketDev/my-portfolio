@@ -309,7 +309,6 @@ body {
 
 #skills .skill-content {
   height: 90%;
-  position: relative;
   background-color: #ddd;
 }
 
@@ -317,80 +316,48 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  width: 20rem;
-  height: 20rem;
-}
-
-#skills .skill-content .skill1 {
-  background-image: url("/assets/images/logo/html.png");
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 50%;
+}
+
+#skills .skill-content .skill1 {
+  background-image: url("/assets/images/logo/js.png");
 }
 
 #skills .skill-content .skill2 {
   background-image: url("/assets/images/logo/css.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #skills .skill-content .skill3 {
   background-image: url("/assets/images/logo/js.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #skills .skill-content .skill4 {
-  background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
+  background-image: url("/assets/images/logo/java.jpg");
 }
 
 #skills .skill-content .skill5 {
-  background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
+  background-image: url("/assets/images/logo/angular.png");
 }
 
 #skills .skill-content .skill6 {
   background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #skills .skill-content .skill7 {
   background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #skills .skill-content .skill8 {
   background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #skills .skill-content .skill9 {
   background-image: url("/assets/images/logo/html.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 #experience {

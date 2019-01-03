@@ -8,14 +8,15 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700|Roboto:400,500,700|Ubuntu:400,500,700"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="assets/js/loading-bar.css" />
     <title>Portfolio - Aniket</title>
 </head>
 
 <body>
     <!-- PRE LOADER -->
-
     <div class="preloader">
         <div class="spinner">
             <span class="spinner-rotate"></span>
@@ -89,8 +90,20 @@
                 <span>Skills</span>
             </div>
             <div class="skill-content">
-                <div class="skill1"></div>
-                <div class="skill2"></div>
+                <div class="skill1">
+                    <div data-preset="circle" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)" class="ldBar label-center"
+                        data-value="80"></div>
+                </div>
+
+                <!-- <img src="assets/images/logo/js.png" />
+                    <div class="pro-bar-container color-wisteria">
+                        <div class="pro-bar bar-100 color-amethyst" data-pro-bar-percent="100"></div>
+                    </div> -->
+                <!-- <div class="skill1"></div> -->
+
+                <div class="skill2">
+                    <div data-preset="energy" class="ldBar label-center" data-value="80"></div>
+                </div>
                 <div class="skill3"></div>
                 <div class="skill4"></div>
                 <div class="skill5"></div>
@@ -122,6 +135,8 @@
             }
         }
     </script>
+
+    <script type="text/javascript" src="assets/js/loading-bar.js"></script>
 </body>
 
 
