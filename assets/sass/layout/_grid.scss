@@ -19,10 +19,50 @@
 //     }
 // }
 
+.container {
+    display: grid;
+    //flex-direction: column;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+.navmenu {
+    display: grid;
+    justify-content: end;
+}
+
 .skill-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     justify-items: center;
+    align-items: center;
+    grid-row-gap: 3rem;
+    grid-column-gap: 4rem;
+
+    .skill-box {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "image text""image bar";
+        grid-row-gap: 3rem;
+
+        img {
+            grid-area: image;
+            align-self: center;
+            justify-self: center;
+        }
+
+        label {
+            grid-area: text;
+            align-self: end;
+            justify-self: center;
+        }
+
+        .bar {
+            grid-area: bar;
+            align-self: start;
+            justify-self: center;
+        }
+    }
 }
