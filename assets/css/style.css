@@ -400,6 +400,42 @@ body {
   background-color: var(--color-lime);
 }
 
+#skills .skill-content .skill-box .html::before {
+  width: 85%;
+}
+
+#skills .skill-content .skill-box .css::before {
+  width: 90%;
+}
+
+#skills .skill-content .skill-box .js::before {
+  width: 80%;
+}
+
+#skills .skill-content .skill-box .ng::before {
+  width: 60%;
+}
+
+#skills .skill-content .skill-box .jq::before {
+  width: 75%;
+}
+
+#skills .skill-content .skill-box .bs::before {
+  width: 70%;
+}
+
+#skills .skill-content .skill-box .java::before {
+  width: 70%;
+}
+
+#skills .skill-content .skill-box .spring::before {
+  width: 75%;
+}
+
+#skills .skill-content .skill-box .jspserv::before {
+  width: 80%;
+}
+
 #experience {
   height: 50rem;
   background-color: tomato;

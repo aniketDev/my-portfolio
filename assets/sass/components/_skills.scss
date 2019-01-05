@@ -85,6 +85,43 @@
                     background-color: var(--color-lime);
                 }
             }
+
+            .html::before {
+                width: 85%;
+            }
+
+            .css::before {
+                width: 90%;
+            }
+
+            .js::before {
+                width: 80%;
+            }
+
+            .ng::before {
+                width: 60%;
+            }
+
+            .jq::before {
+                width: 75%;
+            }
+
+            .bs::before {
+                width: 70%;
+            }
+
+            .java::before {
+                width: 70%;
+            }
+
+            .spring::before {
+                width: 75%;
+            }
+
+            .jspserv::before {
+                width: 80%;
+            }
+
         }
     }
 }
