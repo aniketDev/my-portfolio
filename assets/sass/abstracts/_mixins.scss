@@ -13,3 +13,31 @@
     transform: scale(1.1);
     text-shadow: 0.5rem 1rem 2rem $shadow;
 }
+
+// BREAKPOINTS
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint=='extra-small' {
+        @media all and (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint=='small' {
+        @media all and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=='medium' {
+        @media all and (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $breakpoint=='large' {
+        @media all and (max-width: 1199px) {
+            @content;
+        }
+    }
+}

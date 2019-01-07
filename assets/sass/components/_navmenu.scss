@@ -60,5 +60,6 @@
 }
 
 .nav-bg {
-    background-image: linear-gradient(to left, $color-nav-dark, $color-nav-light);
+    background-image: linear-gradient(to left, color(nav-dark), map-get($colors, nav-light));
+
 }

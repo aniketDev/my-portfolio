@@ -1,6 +1,6 @@
 .heading-primary {
     text-align: center;
-    background: linear-gradient(to left, $color-nav-dark, $color-nav-light);
+    background: linear-gradient(to left, map-get($colors, nav-dark), map-get($colors, nav-light));
 
     span {
         font-size: 4rem;
