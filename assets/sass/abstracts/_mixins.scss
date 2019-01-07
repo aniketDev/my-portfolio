@@ -16,28 +16,20 @@
 
 // BREAKPOINTS
 
-@mixin respond-to($breakpoint) {
-    @if $breakpoint=='extra-small' {
-        @media all and (max-width: 575px) {
+@mixin respond-to($name) {
+
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $name) {
+
+        // Prints a media query based on the value
+        @media #{inspect(map-get($breakpoints, $name))} {
             @content;
         }
     }
 
-    @if $breakpoint=='small' {
-        @media all and (max-width: 768px) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint=='medium' {
-        @media all and (max-width: 991px) {
-            @content;
-        }
-    }
-
-    @else if $breakpoint=='large' {
-        @media all and (max-width: 1199px) {
-            @content;
-        }
+    // If the key doesn't exist in the map
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        +"Please make sure it is defined in `$breakpoints` map.";
     }
 }
