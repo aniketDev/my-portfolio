@@ -92,3 +92,41 @@
 
     }
 }
+
+#work {}
+
+#services {
+    .services-container {
+        display: grid;
+        grid-template: 1fr 1fr 1fr / 0.3fr 1fr 1fr 1fr 0.3fr;
+        grid-column-gap: 4rem;
+        align-content: center;
+        // align-items: center;
+        // justify-items: center;
+
+        .service-image {
+            grid-column: 1 / -1;
+            grid-row: 1 / 3;
+        }
+
+        .service-heading {
+            grid-area: 1 / 1 / 2 / -1;
+            align-self: center;
+        }
+
+        div {
+            &:nth-of-type(3) {
+                grid-area: 2 / 2 / 4 / 3;
+            }
+
+            &:nth-of-type(4) {
+                grid-area: 2 / 3 / 4 / 4;
+            }
+
+            &:nth-of-type(5) {
+                grid-area: 2 / 4 / 4 / 5;
+            }
+        }
+
+    }
+}

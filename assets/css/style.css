@@ -192,7 +192,12 @@ h5 {
   -webkit-transition: background-image 0.3s ease-in-out;
   transition: background-image 0.3s ease-in-out;
   width: 100%;
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
   z-index: 2;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .navmenu ul {
@@ -200,12 +205,14 @@ h5 {
   text-transform: uppercase;
   color: #fff;
   font-size: 1.6rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navmenu ul li {
   display: inline-block;
-  padding: 0.5rem;
-  margin: 1.5rem 0;
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -247,6 +254,7 @@ h5 {
 .nav-bg {
   background-image: -webkit-gradient(linear, right top, left top, from(#016B89), to(#0D9F90));
   background-image: linear-gradient(to left, #016B89, #0D9F90);
+  height: 7vh;
 }
 
 #header .header-image {
@@ -560,6 +568,74 @@ h5 {
   padding: 1rem 0;
 }
 
+#services {
+  height: calc(100vh - 7vh);
+  background-color: #eee;
+}
+
+#services .services-container {
+  height: calc(100% - 6rem);
+  margin: 3rem;
+}
+
+#services .services-container .service-image {
+  background-image: linear-gradient(45deg, rgba(156, 39, 176, 0.5), rgba(103, 58, 183, 0.6)), url("/assets/images/service.jpg");
+  background-size: cover;
+  background-position: 50% 40%;
+  border-radius: 1.6rem;
+}
+
+#services .services-container .service-heading {
+  text-align: center;
+  color: #fff;
+}
+
+#services .services-container .service-card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 100%;
+}
+
+#services .services-container .service-card-side {
+  height: 100%;
+  -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 1.6rem;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#services .services-container .service-card .front {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4CAF50), to(#8BC34A));
+  background-image: linear-gradient(to bottom, #4CAF50, #8BC34A);
+  z-index: 1;
+}
+
+#services .services-container .service-card .back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-image: linear-gradient(45deg, #FFC107, #FF5722);
+}
+
+#services .services-container .service-card:hover .front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+#services .services-container .service-card:hover .back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
 .container {
   display: -ms-grid;
   display: grid;
@@ -679,6 +755,57 @@ h5 {
       align-self: stretch;
 }
 
+#services .services-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 0.3fr 1fr 1fr 1fr 0.3fr;
+      grid-template: 1fr 1fr 1fr / 0.3fr 1fr 1fr 1fr 0.3fr;
+  grid-column-gap: 4rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#services .services-container .service-image {
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+#services .services-container .service-heading {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-area: 1 / 1 / 2 / -1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#services .services-container div:nth-of-type(3) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+#services .services-container div:nth-of-type(4) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 3 / 4 / 4;
+}
+
+#services .services-container div:nth-of-type(5) {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 4 / 4 / 5;
+}
+
 .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -726,5 +853,11 @@ h5 {
 #education {
   height: auto;
   background-color: #eee;
+}
+
+#work {
+  height: 20rem;
+  background-color: var(--color-indigo);
+  color: wheat;
 }
 /*# sourceMappingURL=style.css.map */
