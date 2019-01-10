@@ -846,7 +846,7 @@ h5 {
 }
 
 #experience {
-  height: 100vh;
+  height: calc(100vh - 7vh);
   background-color: #eee;
 }
 

@@ -314,29 +314,28 @@
                 </div>
                 <div class="service-card">
                     <div class="service-card-side front">
-                        <h4>Card Front</f4>
+                        <h4>Web Development</h4>
                     </div>
                     <div class="service-card-side back">
-                        <h4>Back</f4>
+                        <h4>Web Development Back</h4>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-card-side front">
-                        <h4>Card Front</f4>
+                        <h4>Web Design</h4>
                     </div>
                     <div class="service-card-side back">
-                        <h4>Back</f4>
+                        <h4>Web Design Back</h4>
                     </div>
                 </div>
                 <div class="service-card">
                     <div class="service-card-side front">
-                        <h4>Card Front</f4>
+                        <h4>Software Development</h4>
                     </div>
                     <div class="service-card-side back">
-                        <h4>Back</f4>
+                        <h4>Back</h4>
                     </div>
                 </div>
-
             </div>
 
         </section>
@@ -356,6 +355,25 @@
                 nav.classList.remove('nav-bg');
             }
         }
+    </script>
+
+    <script src="assets/js/siema.min.js"></script>
+
+    <script>
+        new Siema({
+            selector: '.siema',
+            duration: 200,
+            easing: 'ease-out',
+            perPage: 1,
+            startIndex: 0,
+            draggable: true,
+            multipleDrag: true,
+            threshold: 20,
+            loop: false,
+            rtl: false,
+            onInit: () => {},
+            onChange: () => {},
+        });
     </script>
 
 </body>
