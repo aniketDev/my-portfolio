@@ -1,0 +1,25 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__content {
+        @include pos-center;
+        width: 75%;
+        height: 75%;
+        background-color: #fff;
+        box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    }
+}

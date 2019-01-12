@@ -20,7 +20,7 @@
         color: #fff;
         box-shadow: -1rem 0 2rem rgba(255, 255, 255, .5), 1rem 0 2rem rgba(255, 255, 255, .5);
         text-shadow: 0 0 1rem rgba(255, 255, 255, .5), 0 0 2rem rgba(255, 255, 255, .5), 0 0 3rem rgba(255, 255, 255, .5);
-        @include scale-up
+        @include scale-up;
     }
 
 }
@@ -45,5 +45,32 @@
         box-shadow: rgba(0, 0, 0, .4);
         color: #fff;
         background: var(--color-teal);
+    }
+}
+
+.read-more-btn {
+    outline: none;
+    @include pos-center;
+    padding: 1.5rem 3rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, rgba(color(pink), 0.8), rgba(color(yellow), 0.8));
+    border: 2px solid color(yellow);
+    border-bottom-color: color(pink);
+    border-right-color: color(pink);
+    border-radius: 20%;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        background-image: linear-gradient(to left, rgba(color(pink), 0.8), rgba(color(yellow), 0.8));
+        border: 2px solid color(pink);
+        border-bottom-color: color(yellow);
+        border-right-color: color(yellow);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+        //color: color(teal);
     }
 }
