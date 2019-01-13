@@ -127,6 +127,36 @@
                 grid-area: 2 / 4 / 4 / 5;
             }
         }
+    }
 
+    .popup {
+
+        &__content {
+            display: grid;
+            grid-template-rows: fit-content(0.3fr) 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+
+            &__heading {
+                grid-column: 1 / -1;
+            }
+
+            &__item {
+                display: grid;
+                grid-template: 0.2fr 1fr / 0.2fr 1fr;
+                grid-template-areas: "img head""img content";
+
+                &__img {
+                    grid-area: img;
+                }
+
+                &__heading {
+                    grid-area: head;
+                }
+
+                &__content {
+                    grid-area: content;
+                }
+            }
+        }
     }
 }
