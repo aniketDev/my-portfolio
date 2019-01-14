@@ -713,7 +713,7 @@ h5 {
           transform: translate(-50%, -50%);
 }
 
-#services .services-container .service-card__heading--1 {
+#services .services-container .service-card__heading--1, #services .services-container .service-card__heading--2, #services .services-container .service-card__heading--3 {
   padding: 0.5rem 1rem;
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
@@ -746,14 +746,31 @@ h5 {
   visibility: visible;
 }
 
+.popup__close:link, .popup__close:visited {
+  color: #9E9E9E;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  font-size: 7rem;
+  z-index: 10;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.popup__close:hover {
+  color: #F44336;
+}
+
 .popup__content {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
   background-color: #fff;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
@@ -764,18 +781,18 @@ h5 {
 }
 
 .popup__content__item__img {
-  padding: 0.5rem;
+  padding-left: 2rem;
   width: 100%;
 }
 
 .popup__content__item__heading {
-  margin-left: 0.3rem;
+  margin-left: 2rem;
 }
 
 .popup__content__item__details {
   font-size: 1.3rem;
   text-align: justify;
-  padding: 0 0.5rem;
+  padding: 0 2rem;
 }
 
 .container {

@@ -15,10 +15,30 @@
         visibility: visible;
     }
 
+    &__close {
+
+        &:link,
+        &:visited {
+            color: color(grey);
+            position: absolute;
+            top: 5%;
+            right: 10%;
+            font-size: 7rem;
+            z-index: 10;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            color: color(red);
+        }
+    }
+
     &__content {
         @include pos-center;
-        width: 75%;
-        height: 75%;
+        width: 80%;
+        height: 80%;
         background-color: #fff;
         box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
 
@@ -29,18 +49,18 @@
         &__item {
 
             &__img {
-                padding: 0.5rem;
+                padding-left: 2rem;
                 width: 100%;
             }
 
             &__heading {
-                margin-left: 0.3rem;
+                margin-left: 2rem;
             }
 
             &__details {
                 font-size: 1.3rem;
                 text-align: justify;
-                padding: 0 0.5rem;
+                padding: 0 2rem;
             }
         }
 
