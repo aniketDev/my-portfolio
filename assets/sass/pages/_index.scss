@@ -3,7 +3,7 @@
 }
 
 #experience {
-    height: 100vh;
+    height: calc(100vh - #{$nav-height});
     background-color: #eee;
 }
 

@@ -19,6 +19,8 @@
         "../sass/components/_heading.scss",
         "../sass/components/_timeline.scss",
         "../sass/components/_services.scss",
+        "../sass/components/_popup.scss",
+        "../sass/components/_contact.scss",
         "../sass/layout/_grid.scss",
         "../sass/layout/_flexbox.scss",
         "../sass/pages/_index.scss"

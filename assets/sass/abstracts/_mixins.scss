@@ -14,6 +14,13 @@
     text-shadow: 0.5rem 1rem 2rem $shadow;
 }
 
+@mixin pos-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 // BREAKPOINTS
 
 @mixin respond-to($name) {
