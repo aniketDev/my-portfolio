@@ -49,39 +49,36 @@
         </section>
 
         <!-- About Section -->
-        <section id="about">
-            <div class="heading-primary">
-                <span>About Me</span>
+        <section id="about" class="about">
+            <div class="about__heading">
+                <h1>About Me<span>Let Me Introduce</span></h1>
             </div>
-            <div class="about-content">
-                <div class="about-images">
-                    <div class="image-container">
-                        <img src="/assets/images/img1.jpg" alt="" class="img--1">
-                        <img src="/assets/images/img2.png" alt="" class="img--2">
-                        <img src="/assets/images/img3.jpg" alt="" class="img--3">
-                    </div>
+            <div class="about__images">
+                <div class="image__container">
+                    <img src="/assets/images/img1.jpg" alt="" class="img--1">
+                    <img src="/assets/images/img2.jpg" alt="" class="img--2">
+                    <img src="/assets/images/img3.jpg" alt="" class="img--3">
                 </div>
-                <div class="about-info">
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ultrices sed urna vel malesuada.
-                        Suspendisse vel sagittis lacus. Nam vehicula tempus nisl. Sed a facilisis dolor. Curabitur
-                        dignissim, orci nec blandit vulputate, neque massa vehicula sem, eu tristique mauris velit
-                        vitae purus. Integer tincidunt felis augue, ac tempor mi vehicula eu. Aliquam porta tempus
-                        risus, in tempus mi tempus eget.
-                    </p>
-                    <p class="paragraph">
-                        Ut sed arcu dapibus, porta leo eget, fermentum tortor. Phasellus nec erat metus. Etiam arcu
-                        massa, elementum sit amet laoreet eu, molestie sit amet leo. Duis sit amet enim erat. Aliquam
-                        egestas nec nisl in elementum. Etiam interdum quis lorem eget gravida. Ut porta volutpat leo, a
-                        interdum leo laoreet tincidunt. Integer vulputate metus nisl, et tristique erat gravida eget.
-                        Morbi quis enim eu.
-                    </p>
-                    <p class="paragraph">
-                        Donec finibus libero eu turpis condimentum, ut tempus neque fringilla. Nulla ac magna ut mauris
-                        feugiat sagittis.
-                    </p>
-                    <button class="download">Download CV</button>
-                </div>
+            </div>
+            <div class="about__info">
+                <p class="paragraph">
+                    Hi there, I am Aniket Mandal. I am a professional front-end web developer currently staying in
+                    Bangalore. After passing my M.Tech I started my job as a Project Coordinator back in Kolkata. There
+                    I find my passion for creating something new. Soon I changed my career and came all the way to
+                    Bangalore to fulfill my dream. Here I started my job as a Front-end web developer in a startup
+                    named Balihans Software Pvt. Ltd. There I started designing and developing company's own product
+                    named Qnabu. I am the only one responsible for designing and developing front end part of the
+                    product. For this I have to learn a lot of things by myself.
+                </p>
+                <p class="paragraph">
+                    Now after working there for almost one year and making the product client ready I am looking for a
+                    job change for more innovative and challenging work and to work with cutting edge technologies.
+                </p>
+                <p class="paragraph">
+                    Donec finibus libero eu turpis condimentum, ut tempus neque fringilla. Nulla ac magna ut mauris
+                    feugiat sagittis.
+                </p>
+                <button class="download">Download CV</button>
             </div>
         </section>
 
@@ -508,7 +505,7 @@
     <script>
         let nav = document.getElementById('nav');
         window.onscroll = function () {
-            if (window.pageYOffset > 750) {
+            if (window.pageYOffset > 550) {
                 nav.classList.add('nav-bg');
             } else {
                 nav.classList.remove('nav-bg');

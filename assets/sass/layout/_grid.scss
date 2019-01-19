@@ -1,23 +1,25 @@
-// #about {
-//     display: grid;
-//     grid-template-rows: 10% 90%;
-//     grid-template-columns: repeat(2, 1fr);
-//     grid-template-areas: "head head"
-//         "image content";
-//     align-items: center;
+.about {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "head head"
+        "image content";
+    align-items: center;
 
-//     .about-heading {
-//         grid-area: head;
-//     }
+    &__heading {
+        grid-area: head;
+    }
 
-//     .about-images {
-//         grid-area: image;
-//     }
+    &__images {
+        grid-area: image;
+    }
 
-//     .about-info {
-//         grid-area: content;
-//     }
-// }
+    &__info {
+        grid-area: content;
+        display: grid;
+        justify-items: center;
+    }
+}
 
 .container {
     display: grid;

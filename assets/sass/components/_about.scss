@@ -1,17 +1,34 @@
-#about {
-    height: 100vh;
-    background-color: #fff;
+.about {
+    height: calc(100vh - #{$nav-height});
+    background-color: #ddd;
 
-    .about-content {
+    &__heading {
+        h1 {
+            font-family: 'Ubuntu', 'sans-serif';
+            font-size: 13rem;
+            letter-spacing: 1.5rem;
+            position: relative;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.1);
+            text-align: center;
+
+            span {
+                font-size: 4rem;
+                letter-spacing: 1rem;
+                text-transform: uppercase;
+                @include pos-center;
+                color: color(teal);
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    &__info {
+        padding: 0 4rem 0 0;
+    }
+
+    &__images {
         height: 90%;
-
-        .about-info {
-            height: 90%;
-            padding: 0 4rem 0 0;
-        }
-
-        .about-images {
-            height: 90%;
-        }
     }
 }
