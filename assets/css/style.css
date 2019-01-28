@@ -364,27 +364,13 @@ h5 {
 }
 
 .about__heading h1 {
-  font-family: 'Ubuntu', 'sans-serif';
   font-size: 13rem;
-  letter-spacing: 1.5rem;
-  position: relative;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .about__heading h1 span {
   font-size: 4rem;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   color: #009688;
-  width: 100%;
-  text-align: center;
 }
 
 .about__info {
@@ -401,7 +387,7 @@ h5 {
 }
 
 #skills .skill-content {
-  height: 90%;
+  height: calc(100vh - 7vh);
   background-color: #ddd;
   padding: 4rem;
 }
@@ -457,7 +443,7 @@ h5 {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: var(--color-blue-grey);
+  color: var(--color-lime);
   z-index: 1;
 }
 
@@ -549,6 +535,39 @@ h5 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.section-heading {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: initial;
+}
+
+.section-heading h1 {
+  font-family: 'Ubuntu', 'sans-serif';
+  letter-spacing: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-heading h1 span {
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.section-heading h1 span:hover {
+  font-size: 5rem;
 }
 
 .timeline:nth-child(2) {
@@ -893,8 +912,8 @@ h5 {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 80%;
-      grid-template-rows: 20% 80%;
+  -ms-grid-rows: 15rem auto;
+      grid-template-rows: 15rem auto;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "head head" "image content";
@@ -1006,8 +1025,8 @@ h5 {
 #education {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 7rem auto;
-      grid-template-rows: 7rem auto;
+  -ms-grid-rows: 15rem auto;
+      grid-template-rows: 15rem auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   grid-auto-rows: auto;
@@ -1205,14 +1224,22 @@ h5 {
   min-height: 100vh;
 }
 
-#experience {
-  height: calc(100vh - 7vh);
+.education,
+.experience {
+  height: auto;
   background-color: #eee;
 }
 
-#education {
-  height: auto;
-  background-color: #eee;
+.education__heading h1,
+.experience__heading h1 {
+  font-size: 13rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.education__heading h1 span,
+.experience__heading h1 span {
+  font-size: 4rem;
+  color: #009688;
 }
 
 #work {

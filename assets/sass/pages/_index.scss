@@ -2,14 +2,23 @@
     min-height: 100vh;
 }
 
-#experience {
-    height: calc(100vh - #{$nav-height});
-    background-color: #eee;
-}
-
-#education {
+.education,
+.experience {
     height: auto;
     background-color: #eee;
+
+    &__heading {
+
+        h1 {
+            font-size: 13rem;
+            color: rgba(0, 0, 0, 0.1);
+
+            span {
+                font-size: 4rem;
+                color: color(teal);
+            }
+        }
+    }
 }
 
 #work {

@@ -3,7 +3,7 @@
     background-color: #ccc;
 
     .skill-content {
-        height: 90%;
+        height: calc(100vh - #{$nav-height});
         background-color: #ddd;
         padding: 4rem;
 
@@ -52,7 +52,7 @@
                 font-size: 2rem;
                 font-weight: 600;
                 letter-spacing: 0.1rem;
-                color: var(--color-blue-grey);
+                color: var(--color-lime);
                 z-index: 1;
             }
 
