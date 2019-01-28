@@ -8,6 +8,8 @@
     background-color: #eee;
 
     &__heading {
+        border-top: 0.5rem solid rgba(0, 0, 0, 0.1);
+        border-bottom: 0.5rem solid rgba(0, 0, 0, 0.1);
 
         h1 {
             font-size: 13rem;

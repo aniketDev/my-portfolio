@@ -363,6 +363,10 @@ h5 {
   background-color: #ddd;
 }
 
+.about__heading {
+  border-bottom: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
 .about__heading h1 {
   font-size: 13rem;
   color: rgba(0, 0, 0, 0.1);
@@ -637,6 +641,10 @@ h5 {
 
 .timeline .timeline-content p {
   padding: 1rem 0;
+}
+
+.timeline .timeline-content p ul {
+  font-size: initial;
 }
 
 #services {
@@ -1228,6 +1236,12 @@ h5 {
 .experience {
   height: auto;
   background-color: #eee;
+}
+
+.education__heading,
+.experience__heading {
+  border-top: 0.5rem solid rgba(0, 0, 0, 0.1);
+  border-bottom: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
 .education__heading h1,
