@@ -68,11 +68,24 @@
 
         p {
             padding: 1rem 0;
+        }
 
-            ul {
+        ul {
+            padding: 1rem 0;
+
+            li {
                 font-size: initial;
+                list-style: circle;
+                position: relative;
 
-                li {}
+                // &::before {
+                //     content: '';
+                //     position: absolute;
+                //     left: 0;
+                //     width: 1rem;
+                //     height: 1rem;
+                //     background-color: rebeccapurple;
+                // }
             }
         }
 
