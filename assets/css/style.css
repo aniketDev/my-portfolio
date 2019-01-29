@@ -678,12 +678,12 @@ h5 {
 
 #services .services-container .service-heading h1 {
   font-size: 13rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 235, 59, 0.2);
 }
 
 #services .services-container .service-heading h1 span {
-  font-size: 4rem;
-  color: white;
+  font-size: 3rem;
+  color: #FFC107;
 }
 
 #services .services-container .service-card {
@@ -785,7 +785,7 @@ h5 {
 
 #services .services-container .service-card__details {
   padding: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-align: justify;
 }
 
@@ -868,6 +868,7 @@ h5 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .contact__heading h1 {
@@ -1051,15 +1052,14 @@ h5 {
   display: grid;
   -ms-grid-rows: 15rem auto;
       grid-template-rows: 15rem auto;
-  grid-auto-rows: auto;
 }
 
 #experience .timeline,
 #education .timeline {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
   -ms-grid-columns: 1fr 1.5fr 0.5fr 3fr 1fr;
       grid-template-columns: 1fr 1.5fr 0.5fr 3fr 1fr;
   -webkit-box-align: baseline;
@@ -1286,7 +1286,7 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: wheat;
+  color: #FFEB3B;
 }
 
 .footer {

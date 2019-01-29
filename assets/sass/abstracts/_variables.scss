@@ -52,9 +52,12 @@ blue-grey: #607D8B);
 $nav-height: 7vh;
 
 
-
-
 // Breakpoints for Responsive design 
+// $breakpoints: ('extra-small' : (max-width: 575px),
+// 'small' : (max-width: 768px),
+// 'medium' : (max-width: 991px),
+// 'large' : (max-width: 1199px));
+
 $breakpoints: ('extra-small' : (max-width: 575px),
 'small' : (max-width: 768px),
 'medium' : (max-width: 991px),

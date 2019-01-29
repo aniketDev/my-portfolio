@@ -73,12 +73,10 @@
 #education {
     display: grid;
     grid-template-rows: 15rem auto;
-    //grid-template-columns: auto;
-    grid-auto-rows: auto;
 
     .timeline {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr 1.5fr 0.5fr 3fr 1fr;
         align-items: baseline;
 
