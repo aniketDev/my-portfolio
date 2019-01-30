@@ -1,10 +1,9 @@
 .navmenu {
     position: fixed;
-    background-image: transparent;
+    background: transparent;
     transition: background-image 0.3s ease-in-out;
     width: 100%;
     height: 10vh;
-    display: grid;
     z-index: 2;
     transition: 0.5s ease-in-out;
 
@@ -13,6 +12,10 @@
         text-transform: uppercase;
         color: #fff;
         font-size: 1.6rem;
+
+        @include respond-below(sm) {
+            visibility: hidden;
+        }
 
         li {
             display: inline-block;

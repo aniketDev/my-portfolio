@@ -20,19 +20,16 @@
             $header-image;
         background-size: cover;
         background-position: 75% 10%;
-        //background-origin: border-box;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
 
         .header-text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             margin-left: 2rem;
+
+            @include respond-below(sm) {
+                //margin-left: 0;
+                margin: 2rem;
+            }
 
             h1 {
                 font-family: 'Ubuntu', sans-serif;
@@ -44,7 +41,7 @@
                 -webkit-background-clip: text;
                 transition: all 0.3s;
 
-                @include respond-below(md) {
+                @include respond-below(sm) {
                     font-size: 4rem;
                 }
 
@@ -62,7 +59,7 @@
                 font-size: 2.3rem;
                 letter-spacing: 0.2rem;
 
-                @include respond-below(md) {
+                @include respond-below(sm) {
                     font-size: 2rem;
                 }
             }

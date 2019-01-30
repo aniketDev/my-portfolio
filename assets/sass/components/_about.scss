@@ -2,6 +2,10 @@
     height: calc(100vh - #{$nav-height});
     background-color: #ddd;
 
+    @include respond-below(sm) {
+        height: auto;
+    }
+
     &__heading {
         border-bottom: 0.5rem solid rgba(0, 0, 0, 0.1);
 
@@ -26,6 +30,11 @@
 
     &__info {
         padding: 0 4rem 0 0;
+
+        @include respond-below(sm) {
+            height: 50rem;
+            padding: 4rem;
+        }
     }
 
     &__images {
@@ -33,6 +42,10 @@
 
         @include respond-below(md) {
             height: 80%;
+        }
+
+        @include respond-below(sm) {
+            height: 50rem;
         }
     }
 }

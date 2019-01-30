@@ -14,6 +14,10 @@ html {
     @include respond-below(lg) {
         font-size: 53%;
     }
+
+    @include respond-below(sm) {
+        font-size: 45%;
+    }
 }
 
 body {
