@@ -9,9 +9,17 @@
             font-size: 13rem;
             color: rgba(0, 0, 0, 0.1);
 
+            @include respond-below(md) {
+                font-size: 10rem
+            }
+
             span {
                 font-size: 4rem;
                 color: color(teal);
+
+                @include respond-below(md) {
+                    font-size: 3rem;
+                }
             }
         }
     }
@@ -22,5 +30,9 @@
 
     &__images {
         height: 90%;
+
+        @include respond-below(md) {
+            height: 80%;
+        }
     }
 }

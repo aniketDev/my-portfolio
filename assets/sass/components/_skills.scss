@@ -1,11 +1,16 @@
 #skills {
-    height: 100vh;
+    height: auto;
     background-color: #ccc;
 
     .skill-content {
-        height: calc(100vh - #{$nav-height});
+        height: calc(100vh - 7rem);
         background-color: #ddd;
         padding: 4rem;
+
+        @include respond-below(md) {
+            height: calc(100vh - 25rem);
+            padding: 2rem;
+        }
 
         .skill-box {
             width: 100%;
@@ -46,6 +51,16 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 z-index: 1;
+
+                @include respond-below(lg) {
+                    width: 10rem;
+                    height: 10rem;
+                }
+
+                @include respond-below(md) {
+                    width: 8rem;
+                    height: 8rem;
+                }
             }
 
             label {
@@ -64,6 +79,14 @@
                 background-color: var(--color-blue-grey);
                 position: relative;
                 overflow: hidden;
+
+                @include respond-below(md) {
+                    border: 0.1rem solid var(--color-blue-grey);
+                }
+
+                @include respond-below(sm) {
+                    border: 0;
+                }
 
                 span {
                     font-size: 1.3rem;

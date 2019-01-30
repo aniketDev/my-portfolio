@@ -11,8 +11,8 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    @include respond-to(medium) {
-        font-size: 50%;
+    @include respond-below(lg) {
+        font-size: 53%;
     }
 }
 
@@ -31,14 +31,26 @@ p {
 
 h1 {
     font-size: 5rem;
+
+    @include respond-below(md) {
+        font-size: 4.5rem;
+    }
 }
 
 h2 {
     font-size: 4rem;
+
+    @include respond-below(md) {
+        font-size: 3.5rem;
+    }
 }
 
 h3 {
     font-size: 3rem;
+
+    @include respond-below(md) {
+        font-size: 2.5rem;
+    }
 }
 
 h4 {
