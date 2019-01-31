@@ -2,7 +2,7 @@
     height: calc(100vh - #{$nav-height});
     background-color: #ddd;
 
-    @include respond-below(sm) {
+    @include respond-below(lg) {
         height: auto;
     }
 
@@ -31,8 +31,7 @@
     &__info {
         padding: 0 4rem 0 0;
 
-        @include respond-below(sm) {
-            height: 50rem;
+        @include respond-below(lg) {
             padding: 4rem;
         }
     }

@@ -13,6 +13,10 @@
         color: #fff;
         font-size: 1.6rem;
 
+        @include respond-below(md) {
+            font-size: 1.5rem;
+        }
+
         @include respond-below(sm) {
             visibility: hidden;
         }
@@ -21,6 +25,10 @@
             display: inline-block;
             margin: 0 1rem;
             text-align: center;
+
+            @include respond-below(md) {
+                margin: 0;
+            }
 
             a {
                 position: relative;

@@ -10,14 +10,6 @@ html {
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5
     box-sizing: border-box;
     scroll-behavior: smooth;
-
-    @include respond-below(lg) {
-        font-size: 53%;
-    }
-
-    @include respond-below(sm) {
-        font-size: 45%;
-    }
 }
 
 body {

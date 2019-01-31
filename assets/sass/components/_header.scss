@@ -26,8 +26,7 @@
         .header-text-container {
             margin-left: 2rem;
 
-            @include respond-below(sm) {
-                //margin-left: 0;
+            @include respond-below(lg) {
                 margin: 2rem;
             }
 

@@ -16,6 +16,10 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.2);
 
+            @include respond-below(md) {
+                font-size: 12rem
+            }
+
             span {
                 font-size: 4rem;
                 letter-spacing: 1rem;

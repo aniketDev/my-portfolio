@@ -16,7 +16,7 @@
             color: rgba(0, 0, 0, 0.1);
 
             @include respond-below(md) {
-                font-size: 10rem;
+                font-size: 9rem;
             }
 
             span {
