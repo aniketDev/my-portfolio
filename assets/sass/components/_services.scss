@@ -3,7 +3,7 @@
     background-color: #eee;
 
     @include respond-below(md) {
-        height: auto;
+        height: 63rem;
     }
 
     .services-container {

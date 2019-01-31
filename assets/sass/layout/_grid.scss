@@ -16,6 +16,12 @@
     }
 }
 
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+
 #header {
 
     .header-image {
@@ -68,27 +74,27 @@
     }
 }
 
-.container {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-}
-
 .skill-content {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
-    grid-row-gap: 3rem;
-    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
 
     @include respond-below(lg) {
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
     }
 
-    @include respond-below(md) {
-        grid-gap: 1.5rem;
+    @include respond-below(md) {}
+
+    @include respond-below(xs) {
+        grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
     }
 
     .skill-box {
@@ -236,11 +242,7 @@
         grid-column-gap: 3rem;
     }
 
-    @include respond-below(md) {
-        grid-template-rows: auto 1fr 0.7fr;
-        grid-template-columns: 0.5fr repeat(3, 1fr) 0.5fr;
-        grid-column-gap: 4rem;
-    }
+    @include respond-below(md) {}
 
     &__heading {
         grid-column: 1 / -1;

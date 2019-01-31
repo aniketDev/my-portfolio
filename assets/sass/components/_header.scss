@@ -28,6 +28,7 @@
 
             @include respond-below(lg) {
                 margin: 2rem;
+                text-align: center;
             }
 
             h1 {
@@ -40,7 +41,7 @@
                 -webkit-background-clip: text;
                 transition: all 0.3s;
 
-                @include respond-below(sm) {
+                @include respond-below(lg) {
                     font-size: 4rem;
                 }
 
