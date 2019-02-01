@@ -20,7 +20,9 @@
             position: relative;
             overflow: hidden;
 
-            @include respond-below(md) {}
+            @include respond-below(sm) {
+                height: 15rem;
+            }
 
             &::before {
                 content: '';
@@ -56,7 +58,10 @@
 
                 @include respond-below(lg) {}
 
-                @include respond-below(md) {}
+                @include respond-below(sm) {
+                    width: 10rem;
+                    height: 10rem;
+                }
             }
 
             label {

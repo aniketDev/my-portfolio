@@ -6,9 +6,15 @@
         height: 63rem;
     }
 
+    @include respond-below(sm) {
+        height: 80rem;
+    }
+
     .services-container {
         height: calc(100% - 6rem);
         margin: 3rem;
+
+        @include respond-below(sm) {}
 
         .service-image {
             background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/assets/images/service.jpg');
@@ -28,6 +34,10 @@
 
                 @include respond-below(md) {
                     font-size: 9rem
+                }
+
+                @include respond-below(sm) {
+                    font-size: 8rem;
                 }
 
                 span {
@@ -88,7 +98,6 @@
                 background-size: cover;
                 height: 55%;
                 background-blend-mode: multiply;
-                -webkit-clip-path: ellipse(100% 90% at 50% 0%);
                 clip-path: ellipse(100% 100% at 50% 0%);
 
                 @include respond-below(md) {
@@ -111,6 +120,23 @@
                     background-image: linear-gradient(to bottom, rgba(color(pink), 1), rgba(color(yellow), 1)),
                         url('/assets/images/soft-dev.jpg');
                     background-position: center;
+                }
+            }
+
+            @include respond-below(sm) {
+                &__unique {
+                    .service-card__image {
+                        height: 100%;
+                        clip-path: ellipse(100% 100% at 0% 50%);
+                    }
+
+                    .service-card__heading {
+                        position: absolute;
+                        top: 50%;
+                        left: 25%;
+                        transform: translate(-50%, -50%);
+                        width: 30%;
+                    }
                 }
             }
 

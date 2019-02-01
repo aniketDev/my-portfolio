@@ -11,7 +11,13 @@ html {
     box-sizing: border-box;
     scroll-behavior: smooth;
 
-    @include respond-below(md) {}
+    @include respond-below(sm) {
+        font-size: 60%;
+    }
+
+    @include respond-below(xs) {
+        font-size: 50%;
+    }
 }
 
 body {

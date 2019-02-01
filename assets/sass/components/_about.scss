@@ -17,6 +17,10 @@
                 font-size: 10rem
             }
 
+            @include respond-below(sm) {
+                font-size: 8rem;
+            }
+
             span {
                 font-size: 4rem;
                 color: color(teal);
@@ -37,6 +41,10 @@
 
         @include respond-below(md) {
             padding: 3rem 3rem 3rem 0;
+        }
+
+        @include respond-below(sm) {
+            padding: 0 3rem 3rem;
         }
     }
 

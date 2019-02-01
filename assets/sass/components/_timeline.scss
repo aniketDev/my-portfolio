@@ -11,8 +11,28 @@
         text-align: right;
         padding-top: 3rem;
 
+        @include respond-below(sm) {
+            text-align: left;
+        }
+
         h4 {
             color: var(--color-deep-orange);
+            position: relative;
+
+            @include respond-below(sm) {
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                display: inline-block;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    height: 0.2rem;
+                    width: 100%;
+                    background-color: var(--color-pink);
+                }
+            }
         }
     }
 
