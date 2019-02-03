@@ -148,6 +148,11 @@
             grid-template-rows: auto auto;
         }
 
+        @include respond-below(xs) {
+            grid-template-columns: 0fr 1fr 4fr 0.3fr;
+            grid-template-rows: auto auto;
+        }
+
         .timeline-header {
             grid-column: 2 / 3;
 
