@@ -71,5 +71,9 @@
         background-color: color(teal);
         color: #fff;
         font-size: 1.6rem;
+
+        @include respond-below(xs) {
+            flex-direction: column;
+        }
     }
 }
