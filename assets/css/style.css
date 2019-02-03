@@ -1607,8 +1607,8 @@ h5 {
 @media (max-width: 576px) {
   #services .services-container {
     -ms-grid-rows: (1fr)[7];
-    -ms-grid-columns: 0.5fr 7fr 0.5fr;
-        grid-template: repeat(7, 1fr)/0.5fr 7fr 0.5fr;
+    -ms-grid-columns: 0.5fr 10fr 0.5fr;
+        grid-template: repeat(7, 1fr)/0.5fr 10fr 0.5fr;
     grid-row-gap: 2rem;
     grid-column-gap: 0;
   }
