@@ -133,6 +133,14 @@
                 width: 70%;
             }
 
+            .sass::before {
+                width: 80%;
+            }
+
+            .react::before {
+                width: 60%;
+            }
+
             .java::before {
                 width: 70%;
             }
@@ -143,6 +151,10 @@
 
             .jspserv::before {
                 width: 80%;
+            }
+
+            .git::before {
+                width: 70%;
             }
 
         }

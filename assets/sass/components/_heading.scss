@@ -43,6 +43,18 @@
 
             &:hover {
                 font-size: 5rem;
+
+                @include respond-below(md) {
+                    font-size: 4rem;
+                }
+
+                @include respond-below(sm) {
+                    font-size: 3rem;
+                }
+
+                @include respond-below(xs) {
+                    font-size: 3rem;
+                }
             }
         }
     }

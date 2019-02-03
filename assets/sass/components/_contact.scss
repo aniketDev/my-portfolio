@@ -24,6 +24,10 @@
                 font-size: 9rem
             }
 
+            @include respond-below(xs) {
+                font-size: 7rem
+            }
+
 
             span {
                 font-size: 4rem;
@@ -33,6 +37,10 @@
                 color: cadetblue;
                 width: 100%;
                 text-align: center;
+
+                @include respond-below(xs) {
+                    font-size: 3rem
+                }
             }
         }
     }

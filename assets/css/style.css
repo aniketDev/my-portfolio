@@ -42,12 +42,6 @@ html {
   }
 }
 
-@media (max-width: 576px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
   background: #ffffff;
   min-height: 100vh;
@@ -417,6 +411,12 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  .about__heading h1 {
+    font-size: 6rem;
+  }
+}
+
 .about__heading h1 span {
   font-size: 4rem;
   color: #009688;
@@ -425,6 +425,12 @@ h5 {
 @media (max-width: 992px) {
   .about__heading h1 span {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__heading h1 span {
+    font-size: 2rem;
   }
 }
 
@@ -617,6 +623,14 @@ h5 {
   width: 70%;
 }
 
+#skills .skill-content .skill-box .sass::before {
+  width: 80%;
+}
+
+#skills .skill-content .skill-box .react::before {
+  width: 60%;
+}
+
 #skills .skill-content .skill-box .java::before {
   width: 70%;
 }
@@ -627,6 +641,10 @@ h5 {
 
 #skills .skill-content .skill-box .jspserv::before {
   width: 80%;
+}
+
+#skills .skill-content .skill-box .git::before {
+  width: 70%;
 }
 
 .heading-primary {
@@ -684,6 +702,24 @@ h5 {
 
 .section-heading h1 span:hover {
   font-size: 5rem;
+}
+
+@media (max-width: 992px) {
+  .section-heading h1 span:hover {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-heading h1 span:hover {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading h1 span:hover {
+    font-size: 3rem;
+  }
 }
 
 .timeline:nth-child(2) {
@@ -798,15 +834,21 @@ h5 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   #services {
-    height: 80rem;
+    height: 100rem;
   }
 }
 
 #services .services-container {
   height: calc(100% - 6rem);
   margin: 3rem;
+}
+
+@media (max-width: 576px) {
+  #services .services-container {
+    margin: 1rem;
+  }
 }
 
 #services .services-container .service-image {
@@ -839,6 +881,12 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  #services .services-container .service-heading h1 {
+    font-size: 7rem;
+  }
+}
+
 #services .services-container .service-heading h1 span {
   font-size: 3rem;
   color: #FFC107;
@@ -847,6 +895,12 @@ h5 {
 @media (max-width: 992px) {
   #services .services-container .service-heading h1 span {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #services .services-container .service-heading h1 span {
+    font-size: 2rem;
   }
 }
 
@@ -915,6 +969,12 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  #services .services-container .service-card__image {
+    height: 50%;
+  }
+}
+
 #services .services-container .service-card__image--1 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e91e63), to(#ffeb3b)), url("/assets/images/website-dev.jpg");
   background-image: linear-gradient(to bottom, #e91e63, #ffeb3b), url("/assets/images/website-dev.jpg");
@@ -939,6 +999,16 @@ h5 {
     -webkit-clip-path: ellipse(100% 100% at 0% 50%);
             clip-path: ellipse(100% 100% at 0% 50%);
   }
+}
+
+@media (max-width: 768px) and (max-width: 576px) {
+  #services .services-container .service-card__unique .service-card__image {
+    -webkit-clip-path: ellipse(100% 100% at 50% 0%);
+            clip-path: ellipse(100% 100% at 50% 0%);
+  }
+}
+
+@media (max-width: 768px) {
   #services .services-container .service-card__unique .service-card__heading {
     position: absolute;
     top: 50%;
@@ -946,6 +1016,14 @@ h5 {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     width: 30%;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 576px) {
+  #services .services-container .service-card__unique .service-card__heading {
+    top: 25%;
+    left: 50%;
+    width: 50%;
   }
 }
 
@@ -965,6 +1043,17 @@ h5 {
   #services .services-container .service-card__heading {
     top: 20%;
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  #services .services-container .service-card__heading {
+    top: 25%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -1098,6 +1187,12 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  .contact__heading h1 {
+    font-size: 7rem;
+  }
+}
+
 .contact__heading h1 span {
   font-size: 4rem;
   letter-spacing: 1rem;
@@ -1110,6 +1205,12 @@ h5 {
   color: cadetblue;
   width: 100%;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  .contact__heading h1 span {
+    font-size: 3rem;
+  }
 }
 
 .contact__box {
@@ -1207,6 +1308,13 @@ h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #header .header-image {
+    -ms-flex-line-pack: end;
+        align-content: end;
   }
 }
 
@@ -1473,6 +1581,16 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  #services .services-container {
+    -ms-grid-rows: (1fr)[7];
+    -ms-grid-columns: 0.5fr 7fr 0.5fr;
+        grid-template: repeat(7, 1fr)/0.5fr 7fr 0.5fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 0;
+  }
+}
+
 #services .services-container .service-image {
   grid-column: 1 / -1;
   -ms-grid-row: 1;
@@ -1497,12 +1615,32 @@ h5 {
   grid-area: 2 / 2 / 4 / 3;
 }
 
+@media (max-width: 576px) {
+  #services .services-container div:nth-of-type(3) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 2 / 2 / 4 / 3;
+  }
+}
+
 #services .services-container div:nth-of-type(4) {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-area: 2 / 3 / 4 / 4;
+}
+
+@media (max-width: 576px) {
+  #services .services-container div:nth-of-type(4) {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 4 / 2 / 6 / 3;
+  }
 }
 
 #services .services-container div:nth-of-type(5) {
@@ -1522,6 +1660,16 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  #services .services-container div:nth-of-type(5) {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 6 / 2 / 8 / 3;
+  }
+}
+
 @media (max-width: 768px) {
   #services .services-container .service-card__unique {
     display: -ms-grid;
@@ -1529,6 +1677,14 @@ h5 {
     -ms-grid-rows: 1fr;
     -ms-grid-columns: 1fr 1fr;
         grid-template: 1fr / 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 576px) {
+  #services .services-container .service-card__unique {
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template: 1fr 1fr / 1fr;
   }
 }
 
@@ -1679,6 +1835,13 @@ h5 {
   }
 }
 
+@media (max-width: 576px) {
+  .education__heading h1,
+  .experience__heading h1 {
+    font-size: 5rem;
+  }
+}
+
 .education__heading h1 span,
 .experience__heading h1 span {
   font-size: 4rem;
@@ -1696,6 +1859,13 @@ h5 {
   .education__heading h1 span,
   .experience__heading h1 span {
     font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .education__heading h1 span,
+  .experience__heading h1 span {
+    font-size: 2rem;
   }
 }
 

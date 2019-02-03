@@ -6,15 +6,18 @@
         height: 63rem;
     }
 
-    @include respond-below(sm) {
-        height: 80rem;
+
+    @include respond-below(xs) {
+        height: 100rem;
     }
 
     .services-container {
         height: calc(100% - 6rem);
         margin: 3rem;
 
-        @include respond-below(sm) {}
+        @include respond-below(xs) {
+            margin: 1rem;
+        }
 
         .service-image {
             background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('/assets/images/service.jpg');
@@ -40,12 +43,20 @@
                     font-size: 8rem;
                 }
 
+                @include respond-below(xs) {
+                    font-size: 7rem;
+                }
+
                 span {
                     font-size: 3rem;
                     color: color(amber);
 
                     @include respond-below(md) {
                         font-size: 2.5rem
+                    }
+
+                    @include respond-below(xs) {
+                        font-size: 2rem
                     }
                 }
             }
@@ -104,6 +115,10 @@
                     height: 45%;
                 }
 
+                @include respond-below(xs) {
+                    height: 50%;
+                }
+
                 &--1 {
                     background-image: linear-gradient(to bottom, rgba(color(pink), 1), rgba(color(yellow), 1)),
                         url('/assets/images/website-dev.jpg');
@@ -128,6 +143,10 @@
                     .service-card__image {
                         height: 100%;
                         clip-path: ellipse(100% 100% at 0% 50%);
+
+                        @include respond-below(xs) {
+                            clip-path: ellipse(100% 100% at 50% 0%);
+                        }
                     }
 
                     .service-card__heading {
@@ -136,6 +155,12 @@
                         left: 25%;
                         transform: translate(-50%, -50%);
                         width: 30%;
+
+                        @include respond-below(xs) {
+                            top: 25%;
+                            left: 50%;
+                            width: 50%;
+                        }
                     }
                 }
             }
@@ -153,6 +178,14 @@
                 @include respond-below(md) {
                     top: 20%;
                     font-size: 1.6rem;
+                }
+
+                @include respond-below(xs) {
+                    top: 25%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 80%;
+                    text-align: center;
                 }
 
                 &--1,
