@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <style>
@@ -55,9 +56,9 @@
             <div class="header-image">
                 <div class="header-text-container">
                     <h1>Hello, I am <span>Aniket Mandal</span></h1>
-                    <p>I'm a front end web developer currently based in Bangalore <br />
+                    <p data-aos="fade-right">I'm a front end web developer currently based in Bangalore <br />
                         focused on writing clean, elegant, efficient and functional code.</p>
-                    <button class="home-button">Get Started</button>
+                    <a data-aos="fade-left" href="#about"><button class="home-button">Get Started</button></a>
                 </div>
             </div>
         </section>
@@ -69,12 +70,12 @@
             </div>
             <div class="about__images">
                 <div class="image__container">
-                    <img src="/assets/images/img1.jpg" alt="" class="img--1">
-                    <img src="/assets/images/img2.jpg" alt="" class="img--2">
-                    <img src="/assets/images/img3.jpg" alt="" class="img--3">
+                    <img src="/assets/images/img1.jpg" alt="" class="img--1" data-aos="fade-right">
+                    <img src="/assets/images/img2.jpg" alt="" class="img--2" data-aos="fade-left">
+                    <img src="/assets/images/img3.jpg" alt="" class="img--3" data-aos="fade-up">
                 </div>
             </div>
-            <div class="about__info">
+            <div class="about__info" data-aos="fade-up">
                 <p class="paragraph">
                     Hi there, I am Aniket Mandal. I am a professional front-end web developer with 1+ years of
                     professional experience.
@@ -91,7 +92,9 @@
                     I try to learn new things each and every day and I feel a day without learning anything new is a
                     day wasted.
                 </p>
-                <button class="download">Download CV</button>
+                <a href="https://drive.google.com/uc?authuser=0&id=1W3hs08YNID8hJLBdFikxskHGN769rceY&export=download">
+                    <button class="download">Download CV</button>
+                </a>
             </div>
         </section>
 
@@ -100,7 +103,7 @@
             <div class="heading-primary">
                 <span>Skills</span>
             </div>
-            <div class="skill-content">
+            <div class="skill-content" data-aos="zoom-out-down">
                 <div class="skill-box">
                     <img src="assets/images/logo/html.png">
                     <label>HTML5</label>
@@ -193,10 +196,10 @@
             <div class="experience__heading section-heading">
                 <h1>Experience<span>My Experiences</span></h1>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Junior Software Developer</h4>
-                    <p>March 2018 - Present <br />(10 months)</p>
+                    <p>March 2018 - Present <br />(11 months)</p>
                 </div>
                 <div class="timeline-icon">
                     <div class="icon-container">
@@ -223,7 +226,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Project Co-ordinator</h4>
                     <p>August 2017 - November 2017 <br />(4 months)</p>
@@ -261,7 +264,7 @@
             <div class="education__heading section-heading">
                 <h1>Education<span>Educational Background</span></h1>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Master Degree (M.Tech)</h4>
                     <p>2014 - 2016</p>
@@ -282,7 +285,7 @@
                     </p>
                 </div>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Bachelor Degree (B.Tech)</h4>
                     <p>2009 - 2013</p>
@@ -304,7 +307,7 @@
                     </p>
                 </div>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Higher Secondary</h4>
                     <p>2007 - 2009</p>
@@ -323,7 +326,7 @@
                     </p>
                 </div>
             </div>
-            <div class="timeline">
+            <div class="timeline" data-aos="fade-up">
                 <div class="timeline-header">
                     <h4>Secondary</h4>
                     <p>2007</p>
@@ -345,7 +348,7 @@
         </section>
 
         <section id="work">
-            <h3>I believe a good design should tell a great story.</h3>
+            <h3 data-aos="fade-right">I believe a good design should tell a great story.</h3>
         </section>
 
         <section id="services">
@@ -354,7 +357,7 @@
                 <div class="section-heading service-heading">
                     <h1>Services<span>This is what I can do for you</span></h1>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up">
                     <div class="service-card__side service-card__side--front">
                         <div class="service-card__image service-card__image--1"></div>
                         <h4 class="service-card__heading">
@@ -370,7 +373,7 @@
                         <a href="#popup1"><button class="read-more-btn">Read More</button></a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-down">
                     <div class="service-card__side service-card__side--front">
                         <div class="service-card__image service-card__image--2"></div>
                         <h4 class="service-card__heading">
@@ -386,7 +389,7 @@
                         <a href="#popup2"><button class="read-more-btn">Read More</button></a>
                     </div>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up">
                     <div class="service-card__side service-card__side--front service-card__unique">
                         <div class="service-card__image service-card__image--3"></div>
                         <h4 class="service-card__heading">
@@ -497,7 +500,7 @@
                     <span>Get In Touch</span>
                 </h1>
             </div>
-            <div class="contact__box contact__box--1">
+            <div class="contact__box contact__box--1" data-aos="fade-up">
                 <div class="contact__box__icon">
                     <i class="fas fa-map-marked-alt"></i>
                 </div>
@@ -506,7 +509,7 @@
                     #23, 6th Cross, 20th Main,BTM 2nd Stage, Bangalore - 560068
                 </div>
             </div>
-            <div class="contact__box contact__box--2">
+            <div class="contact__box contact__box--2" data-aos="fade-down">
                 <div class="contact__box__icon">
                     <i class="fas fa-envelope-open"></i>
                 </div>
@@ -515,7 +518,7 @@
                     aniketmandal9@gmail.com
                 </div>
             </div>
-            <div class="contact__box contact__box--3">
+            <div class="contact__box contact__box--3" data-aos="fade-up">
                 <div class="contact__box__icon">
                     <i class="fas fa-mobile-alt"></i>
                 </div>
@@ -559,6 +562,31 @@
         }
     </script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            // Global settings:
+            //disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            //startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            //initClassName: 'aos-init', // class applied after initialization
+            //animatedClassName: 'aos-animate', // class applied on animation
+            //useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            //disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            //debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            //throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            //offset: 120, // offset (in px) from the original trigger point
+            //delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1500, // values from 0 to 3000, with step 50ms
+            //easing: 'ease-in-out', // default easing for AOS animations
+            //once: false, // whether animation should happen only once - while scrolling down
+            //mirror: false, // whether elements should animate out while scrolling past them
+            //anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 </body>
 
 </html>

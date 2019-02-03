@@ -19,7 +19,7 @@
             rgba(0, 0, 0, 0.8) 90%),
             $header-image;
         background-size: cover;
-        background-position: 75% 10%;
+        background-position: 73% 10%;
         background-repeat: no-repeat;
         background-attachment: fixed;
 
@@ -51,7 +51,8 @@
                 }
 
                 &:hover {
-                    @include scale-up;
+                    transform: scale(1.1);
+                    text-shadow: 0.5rem 1rem 2rem $shadow;
                 }
             }
 

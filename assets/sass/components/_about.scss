@@ -54,6 +54,10 @@
         @include respond-below(sm) {
             padding: 0 3rem 3rem;
         }
+
+        @include respond-below(xs) {
+            padding: 0 1rem 3rem;
+        }
     }
 
     &__images {
