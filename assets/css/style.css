@@ -413,7 +413,7 @@ h5 {
 
 @media (max-width: 576px) {
   .about__heading h1 {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
@@ -686,6 +686,12 @@ h5 {
   text-align: center;
 }
 
+@media (max-width: 576px) {
+  .section-heading h1 {
+    letter-spacing: 1rem;
+  }
+}
+
 .section-heading h1 span {
   letter-spacing: 1rem;
   text-transform: uppercase;
@@ -718,7 +724,7 @@ h5 {
 
 @media (max-width: 576px) {
   .section-heading h1 span:hover {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -883,7 +889,7 @@ h5 {
 
 @media (max-width: 576px) {
   #services .services-container .service-heading h1 {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 }
 
@@ -1195,7 +1201,8 @@ h5 {
 
 @media (max-width: 576px) {
   .contact__heading h1 {
-    font-size: 7rem;
+    font-size: 6rem;
+    letter-spacing: 1rem;
   }
 }
 
@@ -1894,7 +1901,7 @@ h5 {
 @media (max-width: 576px) {
   .education__heading h1,
   .experience__heading h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 

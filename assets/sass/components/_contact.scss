@@ -29,7 +29,8 @@
             }
 
             @include respond-below(xs) {
-                font-size: 7rem
+                font-size: 6rem;
+                letter-spacing: 1rem;
             }
 
             span {
