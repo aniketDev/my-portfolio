@@ -20,6 +20,10 @@
   --color-blue-grey: #607D8B;
 }
 
+.preloader .spinner .spinner-rotate {
+  background-image: url("/assets/images/svg/loader.svg");
+}
+
 *,
 *::after,
 *::before {
