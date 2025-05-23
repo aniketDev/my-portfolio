@@ -4,7 +4,7 @@
   "description": "My Personal Portfolio",
   "main": "index.js",
   "scripts": {
-    "compile-sass": "node-sass assets/sass/main.scss assets/css/style.css"
+    "compile-sass": "sass assets/sass/style.scss assets/css/style.css"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,7 @@
     "url": "https://github.com/aniketDev/my-portfolio/issues"
   },
   "homepage": "https://github.com/aniketDev/my-portfolio#readme",
-  "dependencies": {},
   "devDependencies": {
-    "node-sass": "^4.11.0"
+    "sass": "^1.89.0"
   }
 }
